@@ -400,3 +400,36 @@ In the light of the above discussion, we can specify various memory segments as 
 
 - **Stack** − This segment contains data values passed to functions and procedures within the program.
 
+#Assembly Registers
+Processor operations mostly involve processing data. This data can be stored in memory and accessed from thereon. However, reading data from and storing data into memory slows down the processor, as it involves complicated processes of sending the data request across the control bus and into the memory storage unit and getting the data through the same channel.
+
+To speed up the processor operations, the processor includes some internal memory storage locations, called registers.
+
+The registers store data elements for processing without having to access the memory. A limited number of registers are built into the processor chip.
+
+##Processor Registers
+There are ten 32-bit and six 16-bit processor registers in IA-32 architecture. The registers are grouped into three categories −
+
+- General registers,
+- Control registers, and
+- Segment registers.
+
+The general registers are further divided into the following groups −
+- Data registers,
+- Pointer registers, and
+- Index registers.
+
+###Data Registers
+Four 32-bit data registers are used for arithmetic, logical, and other operations. These 32-bit registers can be used in three ways −
+
+*As complete 32-bit data registers: `EAX, EBX, ECX, EDX`.
+*Lower halves of the 32-bit registers can be used as four 16-bit data registers: AX, BX, CX and DX.
+*Lower and higher halves of the above-mentioned four 16-bit registers can be used as eight 8-bit data registers: `AH, AL, BH, BL, CH, CL, DH, and DL`.
+
+
+
+####**Control Bus**  
+A control bus is a computer bus that is used by the CPU to communicate with devices that are contained within the computer. This occurs through physical connections such as cables or printed circuits.
+
+####Difference Between Cache memory and Registers
+![cache memory - register](http://s.hswstatic.com/gif/computer-memory-pyramid.gif)
